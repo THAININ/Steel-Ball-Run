@@ -1,10 +1,10 @@
 CC = g++
 CFLAGS = -Wall -std=c++11
-LIBS = -lGLEW -lGL -lGLU -lglfw -lSOIL -lglut
+LIBS = -lGL -lGLU -lglut -lGLEW -lSOIL -lm
 
-SRC = test.cpp
+SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
-EXEC = orbita
+EXEC = a
 
 $(EXEC): $(OBJ)
 	$(CC) $(OBJ) -o $(EXEC) $(LIBS)
